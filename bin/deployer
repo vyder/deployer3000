@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'deployer3000'
+
+OptionParser.new do |opts|
+    options = {}
+    opts.banner = "Find out more and check out the source at https://github.com/vyder/deployer3000"
+
+    # TODO: Add real options
+
+    opts.on_tail('-h', '--help', 'Shows this message') do
+        puts opts
+        exit
+    end
+
+    puts opts if ARGV[0] == nil
+
+end.parse!
